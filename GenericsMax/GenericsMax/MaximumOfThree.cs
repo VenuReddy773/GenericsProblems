@@ -36,5 +36,20 @@ namespace GenericsMax
                 return third;
             }
         }
+        public static string MaxString(string first, string second, string third)
+        {
+            if ((first.Length).CompareTo(second.Length) > 0 && (first.Length).CompareTo(third.Length) > 0)
+            {
+                return first;
+            }
+            if ((second.Length).CompareTo(third.Length) > 0 && (second.Length).CompareTo(first.Length) > 0)
+            {
+                return second;
+            }
+            else
+            {
+                return third;
+            }
+        }
     }
 }

@@ -10,7 +10,7 @@ namespace GenericsMax
             while (flag)
             {
                 Console.WriteLine("Welcome To Program To Find Max Of Three\n");
-                Console.WriteLine("choose Option:\n 1.IntMax\n 2.FloatMax\n 3.Exit");
+                Console.WriteLine("choose Option:\n 1.IntMax\n 2.FloatMax\n 3.StringMax\n 4.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
                 {
@@ -31,6 +31,14 @@ namespace GenericsMax
                         Console.WriteLine(result1 + " is Maximum Of Three\n");
                         break;
                     case 3:
+                        Console.WriteLine("Enter Three Float Numbers to Check Max.");
+                        string firstString = Convert.ToString(Console.ReadLine());
+                        string secondString = Convert.ToString(Console.ReadLine());
+                        string thirdString = Convert.ToString(Console.ReadLine());
+                        string result2 = MaximumOfThree.MaxString(firstString, secondString, thirdString);
+                        Console.WriteLine(result2 + " is Maximum Of Three\n");
+                        break;
+                    case 4:
                         flag = false;
                         break;
                 }
