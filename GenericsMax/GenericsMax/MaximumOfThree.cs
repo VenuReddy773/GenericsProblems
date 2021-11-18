@@ -21,5 +21,20 @@ namespace GenericsMax
                 return third;
             }
         }
+        public static double MaxFloat(double first, double second, double third)
+        {
+            if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0)
+            {
+                return first;
+            }
+            if (second.CompareTo(third) > 0 && second.CompareTo(first) > 0)
+            {
+                return second;
+            }
+            else
+            {
+                return third;
+            }
+        }
     }
 }
