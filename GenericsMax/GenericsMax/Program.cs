@@ -10,7 +10,7 @@ namespace GenericsMax
             while (flag)
             {
                 Console.WriteLine("Welcome To Program To Find Max Of Three\n");
-                Console.WriteLine("choose Option:\n 1.IntMax\n 2.FloatMax\n 3.StringMax\n 4.Exit");
+                Console.WriteLine("choose Option:\n 1.IntMax\n 2.FloatMax\n 3.StringMax\n 4.Generic\n 5.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -39,6 +39,11 @@ namespace GenericsMax
                         Console.WriteLine(result2 + " is Maximum Of Three\n");
                         break;
                     case 4:
+                        Console.WriteLine("Generic");
+                        int max = GenericMax<int>.MaxGeneric(3,55,85);
+                        Console.WriteLine(max  + " is Maximum Of Three\n");
+                        break;
+                    case 5:
                         flag = false;
                         break;
                 }
